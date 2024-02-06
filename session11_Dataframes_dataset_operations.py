@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df
 
 # Program to get the first three rows of a given DataFrame
@@ -115,7 +115,7 @@ print(df)
 
 # To replace the PetalLengthCm column contain the value 1.4 by 0.4,
 # 4.6 by 4.1 and 2.8 by 2.0
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df['petal_length']=df['petal_length'].map({1.4 : 0.4, 4.6 : 4.1, 2.8 : 2.0})
 df
 
@@ -136,7 +136,7 @@ for index, row in df.iterrows():
 
 
 # using DataFrame.apply() to apply function and column
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 def add_4(x):
     return x+4
 df2=df['petal_length'].apply(add_4)
@@ -144,7 +144,7 @@ df2
 
 
 # apply to multiple column
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 def add_3(x):
     return x+3
 df2=df[['sepal_length','sepal_width']].apply(add_3)
@@ -156,20 +156,20 @@ df2['petal_length']=df.petal_width.apply(lambda x:x+7)
 df2
 
 # using Pandas DataFrame.map() to single column
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df['sepal_length'] = df['sepal_length'].map(lambda sepal_length : sepal_length/2)
 df
 
 # Using Numpy fuction on single column
 # using DataFrame.apply() and [] operator
 import numpy as np
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df['sepal_length'] = df['sepal_length'].apply(np.square)
 print(df)
 
 
 # Using groupby() function to sum
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df.groupby(['sepal_length']).sum()
 df
 
@@ -179,7 +179,7 @@ print(column_header)
 
 
 # Pandas shuffle DataFrame Rows
-df=pd.read_csv("c:/2-dataset/iris.csv")
+df=pd.read_csv("iris.csv")
 df1 = df.sample(frac = 1)
 print(df1)
 
