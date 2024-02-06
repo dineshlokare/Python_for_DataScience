@@ -35,7 +35,7 @@ import pandas as pd
 s1=pd.read_csv('age.csv')
 s1
 
-df=pd.read_excel('c:/1- Python/Bahaman.xlsx')
+df=pd.read_excel('Bahaman.xlsx')
 
 #None, Nan, nan, and null are synonyms
 # The Series object behaves similarly to
