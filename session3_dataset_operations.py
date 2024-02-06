@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("c:/2-dataset/crime_data.csv")
+df = pd.read_csv("crime_data.csv")
 df
 
 df = pd.DataFrame(df)
@@ -151,7 +151,7 @@ m
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("c:/2-dataset/bank_data.csv")
+df = pd.read_csv("bank_data.csv")
 df
 
 df.columns
@@ -218,7 +218,7 @@ s
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("c:/2-dataset/loan.csv")
+df = pd.read_csv("loan.csv")
 print(df)
 
 df.index
